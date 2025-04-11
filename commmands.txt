@@ -1,0 +1,45 @@
+    1  ls
+    2  cd /etc/yum.repos.d/
+    3  ls
+    4  cd
+    5  wget https://www.oracle.com/java/technologies/javase/jdk17-0-13-later-archive-downloads.html#license-lightbox
+    6  ls
+    7  rm -f jdk17-0-13-later-archive-downloads.html 
+    8  ls
+    9  curl https://www.oracle.com/webapps/redirect/signon?nexturl=https://download.oracle.com/otn/java/jdk/17.0.13%2B10/00d8a0bf05cc4f9087f2bb0f5191ea34/jdk-17.0.13_linux-x64_bin.rpm
+   10  ls
+   11  curl https://www.oracle.com/webapps/redirect/signon?nexturl=https://download.oracle.com/otn/java/jdk/17.0.13%2B10/00d8a0bf05cc4f9087f2bb0f5191ea34/jdk-17.0.13_linux-x64_bin.rpm
+   12  wget https://www.oracle.com/webapps/redirect/signon?nexturl=https://download.oracle.com/otn/java/jdk/17.0.13%2B10/00d8a0bf05cc4f9087f2bb0f5191ea34/jdk-17.0.13_linux-x64_bin.rpm
+   13  ls
+   14  rpm -ivh signon\?nexturl\=https\:%2F%2Fdownload.oracle.com%2Fotn%2Fjava%2Fjdk%2F17.0.13+10%2F00d8a0bf05cc4f9087f2bb0f5191ea34%2Fjdk-17.0.13_linux-x64_bin.rpm 
+   15  rm -f signon\?nexturl\=https\:%2F%2Fdownload.oracle.com%2Fotn%2Fjava%2Fjdk%2F17.0.13+10%2F00d8a0bf05cc4f9087f2bb0f5191ea34%2Fjdk-17.0.13_linux-x64_bin.rpm 
+   16  curl https://download.oracle.com/java/17/archive/jdk-17.0.12_linux-x64_bin.rpm
+   17  ls
+   18  wget https://download.oracle.com/java/17/archive/jdk-17.0.12_linux-x64_bin.rpm
+   19  ls
+   20  rpm -ivh jdk-17.0.12_linux-x64_bin.rpm 
+   21  sudo -i
+   22  ls
+   23  sudo yum install git
+   24  history 
+   25  ls
+   26  history>commmands.txt
+From here we have Root user commands
+
+    1  error: can't create transaction lock on /var/lib/rpm/.rpm.lock (Permission denied)
+    2  rpm -ivh jdk-17.0.12_linux-x64_bin.rpm
+    3  cd /home/ec2-user/
+    4  rpm -ivh jdk-17.0.12_linux-x64_bin.rpm
+    5  sudo wget -O /etc/yum.repos.d/jenkins.repo     https://pkg.jenkins.io/redhat-stable/jenkins.repo
+    6  sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
+    7  sudo yum upgrade
+    8  sudo yum install fontconfig java-17-openjdk
+    9  sudo yum install jenkins
+   10  sudo systemctl daemon-reload
+   11  sudo systemctl enable jenkins
+   12  sudo systemctl start jenkins
+   13  sudo systemctl status jenkins
+   14  cat /var/lib/jenkins/secrets/initialAdminPassword
+   15  cd /home/ec2-user/
+   16  ls
+   17  history>>commmands.txt 
